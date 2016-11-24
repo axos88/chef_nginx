@@ -33,6 +33,7 @@ default['nginx']['binary']       = '/usr/sbin/nginx'
 default['nginx']['default_root'] = '/var/www/nginx-default'
 default['nginx']['ulimit']       = '1024'
 default['nginx']['pid']          = '/var/run/nginx.pid'
+default['nginx']['reload_action'] = :reload
 
 case node['platform_family']
 when 'debian'
